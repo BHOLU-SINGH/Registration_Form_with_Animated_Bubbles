@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form with Animated Bubbles | Free Projects1</title>
+    <meta name="keywords" content="registration form, registration form in html, registration form template, registration form pdf, registration form in html code, registration form template html, registration form online, registration form sample, registration form download, registration forms 2020, registration forms 2021, registration form template free, registration form builder, registration form format, registration form for neet 2021, html registration form code, html registration form template, html registration form with validation, html registration form code using table, html registration form javatpoint, html registration form codepen, html registration form code with validation, html registration form design, html registration form design in notepad, html registration form validation using javascript, html registration form design in hindi, html registration form using table, html registration form in hindi, html css bubble animation, animated bubbles, animated bubbles background, animated bubbles screensaver free download, animated bubbles background css, animated bubble css, animated bubbles transparent background, animated bubbles after effects, free projects with source code and documentation, free projects download, free projects for all, free projects with source code, free projects download sites, free projects for cse, free projects for computer science students, free project 1, free projects1, free projects for computer science, free projects on github, free source code for website, free source code projects, free source code download, free source code for website design in html, free projects, free projects 1 blog, freeprojectsforall, free project download, free project, free project file, free project download with source code, free projects 1 blog, bholu, singh, Bholu Singh, bholu singh github,  who is bholu singh, bholu singh bharatpur, Bholu Singh Bikaner, bholu blogger, bholu sigh blog, freeprojects1, freeproject1, FreeProjects1.blogspot.com">
+    <meta name="description" content="It is a Registration Form with Animated bubbles Free Projects. In this project, We have to create a form using html css. and we have also use animated bubbles in the background as a awesome background theme.">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <section>
+        <!-- <h2>Preeti Dhaked</h2> -->
+        <form>
+            <h2>Registration Form</h2>
+            <label>Username</label><br>
+            <input type="text" name="username" placeholder="Bholu Singh"><br>
+            <label>Email Address</label><br>
+            <input type="email" name="email" placeholder="example@gmail.com"><br>
+            <label>Mobile No.</label><br>
+            <input type="number" name="mobileno" placeholder="7297XXXXXX"><br>
+            <label>Gender</label><br>
+            <input type="radio" class="male" name="gender" value="Male">MALE
+            <input type="radio" name="gender" value="Female">FEMALE
+            <input type="radio" name="gender" value="Other">OTHER<br>
+            <label>Category</label><br>
+            <input type="checkbox" class="category" name="category" value="ST">ST
+            <input type="checkbox" name="category" value="SC">SC
+            <input type="checkbox" name="category" value="OBC">OBC
+            <input type="checkbox" name="category" value="GENERAL">GENERAL<br>
+            <button type="submit" class="btn" name="submit" value="Submit">Submit</button>
+        </form>
+    </section>
+    <script type="text/javascript">
+        function createBubble() {
+            const section = document.querySelector('section');
+            const createElement = document.createElement('span');
+            var size = Math.random() * 60;
+
+            createElement.style.width = 20 + size + 'px';
+            createElement.style.height = 20 + size + 'px';
+            createElement.style.left = Math.random() * innerWidth + 'px';
+            section.appendChild(createElement);
+
+            setTimeout(() => {
+                createElement.remove()
+            }, 4000)
+        }
+        setInterval(createBubble, 200);
+    </script>
+</body>
+
+</html>
